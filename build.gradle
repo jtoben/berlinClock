@@ -12,8 +12,15 @@ repositories {
 	mavenCentral()
 }
 
+bootRun {
+	if (project.hasProperty('args')) {
+		args project.args.split(',')
+	}
+}
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
