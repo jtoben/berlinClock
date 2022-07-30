@@ -13,3 +13,4 @@ My focus was on the logic of the Kata, not input parsing.
 - There is still some overlap/code duplication between getting some of the rows for the berlin clock.
 For example `getSingleMinutesRow` and `getSingleHoursRow` only differ in whether they get minutes or hours, and whether they return "Y" or "R". However, in my opinion, generalizing this more doesn't improve code readability.
 - I chose Gradle instead of Maven because I am slightly more familiar with it.
+- Skeleton of project was set up using https://start.spring.io/
